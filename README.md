@@ -37,5 +37,14 @@ Key features
   - Unit tests for ViewModels (example: `DisplayViewModelTest`, `InputViewModelTest`) under `app/src/test`.
   - Instrumentation test added for the local Room database / `UserDao` under `app/src/androidTest` (`UserDaoInstrumentedTest`).
 
+## 📸 Screenshots
+<img width="321" height="580" alt="Demo" src="demo.gif" />
+<img width="321" height="580" alt="Screenshot" src="screenshot4.png" />
+<img width="321" height="580" alt="Screenshot" src="screenshot3.png" />
+<img width="321" height="580" alt="Screenshot" src="screenshot2.png" />
+<img width="321" height="580" alt="Screenshot" src="screenshot.png" />
+<img width="321" height="580" alt="Video Record" src="record.mp4" />
+
+
 
 
