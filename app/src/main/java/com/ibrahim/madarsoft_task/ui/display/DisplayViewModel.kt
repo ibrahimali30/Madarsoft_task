@@ -13,11 +13,12 @@ import javax.inject.Inject
 
 @HiltViewModel
 class DisplayViewModel @Inject constructor(
-    private val repository: UserRepository
+    private val repository: UserRepository,
+    private val started: SharingStarted = SharingStarted.WhileSubscribed(5000)
 ) : ViewModel() {
 
     val users: StateFlow<List<User>> = repository.getAllUsers()
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+        .stateIn(viewModelScope, started, emptyList())
 
     fun deleteUser(user: User, onDeleted: () -> Unit = {}) {
         viewModelScope.launch {
