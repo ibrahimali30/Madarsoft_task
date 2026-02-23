@@ -15,6 +15,8 @@ lifecycleViewModel = "2.6.1"
 composeFoundation = "1.5.4"
 materialIcons = "1.5.4"
 hiltNavigationCompose = "1.1.0"
+coroutinesTest = "1.7.3"
+mockk = "1.13.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -56,6 +58,10 @@ androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navig
 
 # javax.inject
 javax-inject = { group = "javax.inject", name = "javax.inject", version = "1" }
+
+# Test Libraries
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
